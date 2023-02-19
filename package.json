@@ -5,10 +5,9 @@
   "main": "index.js",
   "scripts": {
     "build": "npx tsc",
-    "dev": "ENV=local nodemon server.ts",
     "lint": "eslint .",
     "prepare": "husky install",
-    "start": "ENV=local ts-node server.ts"
+    "start": "rm -rf ./dist && npx tsc && ENV=local ts-node index.ts"
   },
   "repository": {
     "type": "git",
