@@ -1,0 +1,19 @@
+{
+    "extends": "@tsconfig/node16-strictest-esm/tsconfig.json",
+    "compilerOptions": {
+      "allowJs": true,
+      "allowSyntheticDefaultImports": true,
+      "checkJs": false,
+      "declaration": true,
+      "incremental": true,
+      "outDir": "./dist",
+      "removeComments": true,
+      "resolveJsonModule": true,
+      "sourceMap": true
+    },
+    "include": ["./src/", "./*.js", "./*.ts"],
+    "exclude": ["node_modules", "dist"],
+    "ts-node": {
+      "esm": true
+    }
+}
